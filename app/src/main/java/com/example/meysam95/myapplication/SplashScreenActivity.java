@@ -6,7 +6,7 @@ import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
 
-public class SplashScreen extends AppCompatActivity implements Runnable {
+public class SplashScreenActivity extends AppCompatActivity implements Runnable {
 
     Intent intent;
 
@@ -26,7 +26,7 @@ public class SplashScreen extends AppCompatActivity implements Runnable {
 
     @Override
     public void run() {
-        intent = new Intent(SplashScreen.this, Gridview.class);
+        intent = new Intent(SplashScreenActivity.this, GridviewActivity.class);
         startActivity(intent);
     }
 }
