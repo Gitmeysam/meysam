@@ -27,7 +27,7 @@ public class SplashScreenActivity extends AppCompatActivity {
             @Override
             public void run() {
                 try {
-                    Thread.sleep(1000);
+                    Thread.sleep(100);
                     intent = new Intent(SplashScreenActivity.this, GridviewActivity.class);
                     startActivity(intent);
                     finish();
